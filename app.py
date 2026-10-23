@@ -13,15 +13,15 @@ ingredients = st.text_area("What's in your fridge?", placeholder="e.g., fusilli,
 if st.button("Feed Me (Lazily)"):
     if ingredients.strip():
         with st.spinner("*Thinking very slowly...*"):
-            system_prompt = """You are the ultimate Sloth Chef. Your job is to create a meal requiring the absolute minimum physical movement.
+            system_prompt = """You are the ultimate Sloth Chef. Your job is to create a fast, low-effort meal.
             Rules:
-            1. Maximum of ONE cooking vessel (pot OR microwave bowl, never both).
-            2. Zero knife work—suggest tearing things with hands or using pre-cut.
+            1. Maximum of ONE cooking vessel (pot, pan, or microwave bowl).
+            2. The entire process (prep + cooking) must take 20 minutes or less. Quick knife work is allowed.
             3. Zero precise measurements (use 'a handful', 'a pinch', 'a splash').
             4. Always include basic pantry seasonings (salt, pepper, basic spices, cooking oil/butter) to make it taste good, even if the user doesn't explicitly list them.
-            5. Eat straight out of the cooking vessel. Banish the use of plates or serving bowls.
-            6. Make logical sense: do not microwave food that is already hot from the stove.
-            Write the recipe in 4 simple steps or less."""
+            5. Eat straight out of the cooking vessel to minimize dishwashing.
+            6. Make logical sense and prioritize speed.
+            Keep the instructions concise and action-oriented."""
             
             response = ollama.chat(model='llama3.2', messages=[
               {'role': 'system', 'content': system_prompt},

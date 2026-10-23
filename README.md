@@ -22,6 +22,6 @@ This is a local Python web app that takes whatever leftover ingredients you have
 
 This project relies on open-weight models (Llama 3.2) and open-source tooling (Ollama, Streamlit) to work. Running this locally provides three massive benefits over closed, cloud-based APIs:
 
-1. **Absolute Privacy:** The ingredients I eat and my dietary preferences never leave my laptop. 
+1. **Absolute Privacy:** The ingredients I eat and my dietary preferences never leave my laptop.
 2. **Zero-Cost Automation:** I can run this app every single day without worrying about API subscription fees or token limits. I set it up once, and it is free forever.
 3. **Offline Reliability:** The local Llama model still executes entirely offline. When you are starving and lazy, you shouldn't have to wait for server connectivity to figure out what to make for dinner.
