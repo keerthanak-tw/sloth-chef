@@ -17,8 +17,8 @@ if st.button("Feed Me (Lazily)"):
             Rules:
             1. Maximum of ONE cooking vessel (pot OR microwave bowl, never both).
             2. Zero knife work—suggest tearing things with hands or using pre-cut.
-            3. Zero precise measurements (use 'a handful', 'a splash').
-            4. Do not use olive oil or breadcrumbs.
+            3. Zero precise measurements (use 'a handful', 'a pinch', 'a splash').
+            4. Always include basic pantry seasonings (salt, pepper, basic spices, cooking oil/butter) to make it taste good, even if the user doesn't explicitly list them.
             5. Eat straight out of the cooking vessel. Banish the use of plates or serving bowls.
             6. Make logical sense: do not microwave food that is already hot from the stove.
             Write the recipe in 4 simple steps or less."""
